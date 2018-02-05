@@ -59,14 +59,14 @@ class SocialConect {
 		if ($this->provider == 'vkontakte') {
 			$this->config = [
 				'callback' => $this->callback,
-				'keys' => ['id' => '6357516', 'secret' => '6HzVAG78rT3huBeYE3OZ'],
+				'keys' => ['id' => '', 'secret' => ''],
 			];
 			$this->vkontakteAuth();
 		}
 		if ($this->provider == 'facebook') {
 			$this->config = [
 				'callback' => $this->callback,
-				'keys' => ['id' => '1814018862224028', 'secret' => '9312fd7b71ac2674d6429e1ece68c942'],
+				'keys' => ['id' => '', 'secret' => ''],
 			];
 			$this->facebookAuth();
 		}
@@ -107,10 +107,10 @@ class SocialConect {
 		$this->data['apiResponse'] = $this->auth->apiRequest('gists');
 
 		/*Get Provider Access Token Key*/
-		$this->data['accessToken'] = $auth->getAccessToken();
+		$this->data['accessToken'] = $this->auth->getAccessToken();
 
 		/*Get Provider Responce Body*/
-		//$this->data['ResponseBody']->getHttpClient()->getResponseBody();
+		//$this->data['ResponseBody'] = $this->auth->getHttpClient()->getResponseBody();
 
 		/*Disconnect From Provider*/
 		$this->auth->disconnect();
