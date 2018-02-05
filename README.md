@@ -5,12 +5,12 @@ PHP Social Connect Class (based on Hybridauth Library)
 ### created by Vladimir S. Udartsev [udartsev.ru](http://udartsev.ru)
 
 
-Based on [Hybridauth v 3.0.0](https://hybridauth.github.io/)
+**Based on [Hybridauth v 3.0.0](https://hybridauth.github.io/)**
 
-
-** Vkontakte Auth **
-** Facebook Auth **
-
+-------------------
+**Vkontakte Auth**
+**Facebook Auth**
+-------------------
 
 PHP SocialConnectClass - This simple example class illustrate how to authenticate users with Facebook and Vkontakte.
 
